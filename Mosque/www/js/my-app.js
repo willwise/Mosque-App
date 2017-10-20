@@ -16,6 +16,10 @@ $$(document).on('deviceready', function() {
     console.log("Device is ready!");
 });
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log("window.open works well");
+}
 
 // Now we need to run the code that will be executed only for About page.
 
@@ -37,27 +41,27 @@ $$(document).on('pageInit', function (e) {
 })
 
 // Option 2. Using live 'pageInit' event handlers for each page
-$$(document).on('pageInit', '.page[data-page="about"]', function (e) {
+//(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
-    myApp.alert('Here comes About page');
-})
+//    myApp.alert('Here comes About page');
+//})
 
 // Mosque Code
-//$(function() {
-  //  Papa.parse("sample.csv", {
-    //    download: true,
-      //  complete: function(results) {
-        //    console.log("Remote file parsed!", results.data);
-          //  $.each(results.data, function(i, el) {
-            //    var row = $("<tr/>");
-              //  row.append($("<td/>").text(i));
-               // $.each(el, function(j, cell) {
-                //    if (cell !== "")
-                //        row.append($("<td/>").text(cell));
-//                });
-//                $("#results tbody").append(row);
-//            });
-//        }
- //   });
-//});
+$(function() {
+    Papa.parse("sample.csv", {
+        download: true,
+        complete: function(results) {
+            console.log("Remote file parsed!", results.data);
+            $.each(results.data, function(i, el) {
+                var row = $("<tr/>");
+                row.append($("<td/>").text(i));
+                $.each(el, function(j, cell) {
+                    if (cell !== "")
+                        row.append($("<td/>").text(cell));
+                });
+                $("#results tbody").append(row);
+            });
+        }
+   });
+});
 // end of mosque code

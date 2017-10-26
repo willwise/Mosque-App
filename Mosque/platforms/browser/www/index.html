@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<!-- Debugging Code Begining -->
 	<script src="http://192.168.0.17:8080/target/target-script-min.js#anonymous"></script>
-	<!-- Prayer Time Code End -->
-
-<!-- Prayer Time Code Beging -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="http://papaparse.com/resources/js/papaparse.js"></script>
-    <script src="js/main.js"></script>
-    <meta charset="utf-8">
-<!-- Prayer Time Code End -->
+	<!-- Debugging Code End -->
 
     <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
@@ -56,38 +50,38 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
-            <table>
-                <div>  <a href="index.html"> <img src="img\slide_logo.gif" alt="Camera icon" height="100%" width="100%"> <h3> Mosque Name Here</h3> </a> </div>
+            <table id="menu">
+                <div>  <a href="index.html"> <img src="img\slide_logo.png" alt="Camera icon" height="100%" width="100%"> <h3> Mosque Name Here</h3> </a> </div>
                     <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="prayertimes.html"> Prayer Times </a> </th>
+                        <th> <img src="img\prayer_times_menu.jpg" alt="Prayer Times icon" height="25" width="25"> </th> <th> <a href="prayertimes.html"> Prayer Times </a> </th>
                     </tr>
                      <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="messages.html"> Messages </a> </th>
+                        <th> <img src="img\messages_menu.jpg" alt="Messages icon" height="25" width="25"> </th> <th> <a href="messages.html"> Messages </a> </th>
                     </tr> 
                     <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="events.html"> Events </a> </th>
+                        <th> <img src="img\events_menu.jpg" alt="Events icon" height="25" width="25"> </th> <th> <a href="https://mosque.com/events"> Events </a> </th>
                      </tr> 
                      <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="audio.html"> Audio </a> </th>
+                        <th> <img src="img\audio_menu.jpg" alt="Audio icon" height="25" width="25"> </th> <th> <a href="https://soundcloud.com"> Audio </a> </th>
                     </tr>
                     <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="video.html"> Videos </a> </th>
+                        <th> <img src="img\video_menu.png" alt="Video icon" height="25" width="25"> </th> <th> <a href="https://youtube.com"> Videos </a> </th>
                      </tr>
                      <tr>
-                        <th> <img src="img\slide_menu.gif" alt="Camera icon" height="25" width="25"> </th> <th> <a href="about.html"> About Us </a> </th>
+                        <th> <img src="img\about_menu.png" alt="About icon" height="25" width="25"> </th> <th> <a href="about.html"> About Us </a> </th>
                     </tr>                    
             </table>
 <!-- Table For Social Media Icons -->
-            <div id="socicalicon" >
-                    <table>
+
+            <table id="socicalicon">
                         <tr>
                             <td> <a href="https://facebook.com" class="link"> <img src="img\facebook-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>
                             <td> <a href="https://youtube.com" class="link"> <img src="img\youtube-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>
                             <td> <a href="https://twitter.com" class="link"> <img src="img\twitter-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>  
                             <td> <a href="https://soundcloud.com" class="link"> <img src="img\soundcloud-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>                          
                         </tr>
-                    </table>
-            </div>
+                    </table> 
+
         </div>
     </div>
 
@@ -117,13 +111,64 @@
                     <div class="page-content">
                         <div class="content-block">                            
 	                        <div>
-	                        	<table><td><div> <a href="https://facebook.com" class="link"> <img src="img\bckgrwlper.jpg" class="link" alt="content Image" width="25%" center > </a> </div></td>
-		                        	<table id="results">
-											<tbody>
-											
-											</tbody>
-									</table>
-								</table>
+		                        <table>
+                                            <tr>
+                                                <td colspan="7">                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td colspan="7"> 
+                                                    Daily Prayer Begining Times
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>                                                    
+                                                <th>Date</th>
+                                                <th>Fajr</th>
+                                                <th>Sunrise</th>
+                                                <th>Zuhur</th>
+                                                <th>Asr</th>
+                                                <th>Margrib</th>
+                                                <th>Isha</th>
+                                            </tr> 
+
+                                            <tr>                                                    
+                                                <td>Date</td>
+                                                <td>Fajr</td>
+                                                <td>Sunrise</td>
+                                                <td>Zuhur</td>
+                                                <td>Asr</td>
+                                                <td>Margrib</td>
+                                                <td>Isha</td>
+                                            </tr>            
+
+                                            <tr>
+                                                    <td colspan="7"> 
+                                                        Daily Jamat Prayer Times
+                                                    </td>
+                                                </tr>
+                                                
+                                            <tr>                                                    
+                                                <th>Date</th>
+                                                <th>Fajr</th>
+                                                <th>Sunrise</th>
+                                                <th>Zuhur</th>
+                                                <th>Asr</th>
+                                                <th>Margrib</th>
+                                                <th>Isha</th>
+                                            </tr> 
+
+                                                <tr>                                                    
+                                                    <td>Date</td>
+                                                    <td>Fajr</td>
+                                                    <td>Sunrise</td>
+                                                    <td>Zuhur</td>
+                                                    <td>Asr</td>
+                                                    <td>Margrib</td>
+                                                    <td>Isha</td>
+                                                </tr>
+                                    </table>                            
 							</div>
 							
                         </div>
@@ -134,8 +179,8 @@
             <div class="toolbar">
                 <div class="toolbar-inner">
                     <!-- Toolbar links -->
-                    <a href="#" class="link">Website</a>
-                    <a href="https://google.com/" class="link"> <img src="img\sound_icon.png" class="link" alt="Camera icon" height="25" width="25" > </a>
+                    <a href="https://google.com/" class="link">Website</a>
+                    <a  href="https://google.com/" class="link"> <img src="img\sound_icon.png" class="link" alt="Camera icon" height="25" width="25"></a>
                 </div>
             </div>
         </div>

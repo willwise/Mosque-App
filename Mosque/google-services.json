@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "855562353122",
+    "firebase_url": "https://mosque-76018.firebaseio.com",
+    "project_id": "mosque-76018",
+    "storage_bucket": "mosque-76018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855562353122:android:a328d88fed83216f",
+        "android_client_info": {
+          "package_name": "COM.ABUTIMUR.MOSQUEAPP"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855562353122-0vleg88umfdd62ipr34hrj2nvm19fo98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRi7pKR27aX4WoeIsI4ioXg2ljD2STavA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

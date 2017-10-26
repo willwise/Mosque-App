@@ -14,15 +14,12 @@
     background: #000000;
 }
 
-#results {
-	width: 100%;
-	border-collapse: collapse;
-}
-
-table, tr, td{
+table, tr, td{        
         table-layout: fixed;
         width: 100%;
         text-align: center;
+        border: 0px solid blue;
+        border-spacing: 0px;
         }
 
 h3{
@@ -30,6 +27,15 @@ h3{
     }
 
 #socicalicon{
-position:absolute;
-   bottom:0;
+        position:absolute;
+        bottom:0;
+
+}
+
+.page-content{
+  background-image:url(bckgrwlper.jpg);
+}
+
+body{
+
 }

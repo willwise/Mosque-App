@@ -1,0 +1,27 @@
+{
+  "name": "com.abutimur.mosque",
+  "version": "1.0.0",
+  "displayName": "Mosque",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-inappbrowser": {}
+    }
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "cordova": "^7.1.0",
+    "cordova-android": "~6.3.0",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-file": "^4.3.3",
+    "cordova-plugin-inappbrowser": "^1.7.1",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-whitelist": "~1.2.0",
+    "plugin": "^0.3.3"
+  }
+}

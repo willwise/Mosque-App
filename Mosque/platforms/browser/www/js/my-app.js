@@ -9,6 +9,11 @@ var $$ = Dom7;
 var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
     dynamicNavbar: true
+
+ // In-App Browser Start
+var ref = cordova.InAppBrowser.open(url, target, options);
+//In-App Browser End
+
 });
 
 // Handle Cordova Device Ready Event
@@ -18,13 +23,15 @@ $$(document).on('deviceready', function() {
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    console.log("window.open works well");
+    console.log("window.open works well");     
 }
+
+
 
 // Now we need to run the code that will be executed only for About page.
 
-// Option 1. Using page callback for page (for "about" page in this case) (recommended way):
-myApp.onPageInit('about', function (page) {
+// Option 1. Using page callback for page (for "Messages" page in this case) (recommended way):
+myApp.onPageInit('Messages', function (page) {
     // Do something here for "about" page
 
 })
@@ -34,34 +41,28 @@ $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
 
-    if (page.name === 'about') {
-        // Following code will be executed for page with data-page attribute equal to "about"
-        myApp.alert('Here comes About page');
+    if (page.name === 'Messages') {
+        // Following code will be executed for page with data-page attribute equal to "Messages"
+        myApp.alert('Here comes Messages page');
     }
 })
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    // In-App Browser Start
+         
+//        var ref = cordova.InAppBrowser.open(url, target, options);
+  //  };
+//function readFile(fileEntry) {
 
-// Option 2. Using live 'pageInit' event handlers for each page
-//(document).on('pageInit', '.page[data-page="about"]', function (e) {
-    // Following code will be executed for page with data-page attribute equal to "about"
-//    myApp.alert('Here comes About page');
-//})
+//    fileEntry.file(function (file) {
+//        var reader = new FileReader();
+//
+ //       reader.onloadend = function() {
+  //          console.log("Successful file read: " + this.result);
+    //        displayFileData(fileEntry.fullPath + ":csv/sample.txt " + this.result);
+      //  };
 
-// Mosque Code
-$(function() {
-    Papa.parse("sample.csv", {
-        download: true,
-        complete: function(results) {
-            console.log("Remote file parsed!", results.data);
-            $.each(results.data, function(i, el) {
-                var row = $("<tr/>");
-                row.append($("<td/>").text(i));
-                $.each(el, function(j, cell) {
-                    if (cell !== "")
-                        row.append($("<td/>").text(cell));
-                });
-                $("#results tbody").append(row);
-            });
-        }
-   });
-});
-// end of mosque code
+    //    reader.readAsText(file);
+
+//    }, onErrorReadFile);
+//}
+    //In-App Browser End

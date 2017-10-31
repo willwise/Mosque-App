@@ -1,4 +1,4 @@
-Node version: v8.6.0
+Node version: v8.7.0
 
 Cordova version: 7.1.0
 
@@ -26,6 +26,7 @@ Config.xml file:
         <preference name="AndroidPersistentFileLocation" value="Internal" />
         <preference name="AndroidPersistentFileLocation" value="Compatibility" />
         <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
+        <plugin name="cordova-plugin-firebase" spec="0.1.20" />
         <feature name="InAppBrowser">
             <param name="android-package" value="org.apache.cordova.InAppBrowser" />
         </feature>
@@ -53,14 +54,12 @@ Config.xml file:
 
 Plugins: 
 
-cordova-plugin-compat,cordova-plugin-console,cordova-plugin-file,cordova-plugin-inappbrowser,cordova-plugin-statusbar,cordova-plugin-whitelist
+cordova-plugin-compat,cordova-plugin-console,cordova-plugin-file,cordova-plugin-inappbrowser,cordova-plugin-splashscreen-master,cordova-plugin-statusbar,cordova-plugin-whitelist
 
 Error retrieving Android platform information: 
 Android SDK is not set up properly. Make sure that the Android SDK 'tools' and 'platform-tools' directories are in the PATH variable. 
 
-Error: cmd: Command failed with exit code 1 Error output:
-'android' is not recognized as an internal or external command,
-operable program or batch file.
+Error: cmd: Command failed with exit code ENOENT
 
 
 

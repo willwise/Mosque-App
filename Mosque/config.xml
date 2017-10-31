@@ -36,11 +36,11 @@
     </platform>
     <preference name="DisallowOverscroll" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
-    <plugin name="cordova-plugin-console" spec="~1.0.1" />
-    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="iosPersistentFileLocation" value="Compatibility" />
     <engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console" spec="~1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.1" />
 </widget>

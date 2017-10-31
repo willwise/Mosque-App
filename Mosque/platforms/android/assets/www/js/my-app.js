@@ -10,10 +10,15 @@ var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
     dynamicNavbar: true
 
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
  // In-App Browser Start
-var ref = cordova.InAppBrowser.open(url, target, options);
+     
 //In-App Browser End
+// In-File Browser Start
 
+
+// In-File Browser End
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 });
 
 // Handle Cordova Device Ready Event
@@ -51,18 +56,54 @@ $$(document).on('pageInit', function (e) {
          
 //        var ref = cordova.InAppBrowser.open(url, target, options);
   //  };
-//function readFile(fileEntry) {
+function readFile(fileEntry) {
 
-//    fileEntry.file(function (file) {
-//        var reader = new FileReader();
-//
- //       reader.onloadend = function() {
-  //          console.log("Successful file read: " + this.result);
-    //        displayFileData(fileEntry.fullPath + ":csv/sample.txt " + this.result);
-      //  };
+    fileEntry.file(function (file) {
+        var reader = new FileReader();
 
-    //    reader.readAsText(file);
+       reader.onloadend = function() {
+          console.log("Successful file read: " + this.result);
+            displayFileData(fileEntry.fullPath + ":sample.csv " + this.result);
+        };
 
-//    }, onErrorReadFile);
-//}
+        reader.readAsText(file);
+
+    }, onErrorReadFile);
+}
+
+
+document.addEventListener("deviceready", init, false);
+function init() {
+    
+    //This alias is a read-only pointer to the app itself
+    window.resolveLocalFileSystemURL(cordova.file.applicationDirectory + "csv/sample.csv", gotFile, fail);
+
+    /* Yes, this works too for our specific example...
+    $.get("index.html", function(res) {
+        console.log("index.html", res);
+    });
+    */
+
+}
+
+function fail(e) {
+    console.log("FileSystem Error");
+    console.dir(e);
+}
+
+function gotFile(fileEntry) {
+
+    fileEntry.file(function(file) {
+        var reader = new FileReader();
+
+        reader.onloadend = function(e) {
+            console.log("Text is: "+this.result);
+            document.querySelector("#textArea").innerHTML = this.result;
+        }
+
+        reader.readAsText(file);
+    });
+
+}
     //In-App Browser End
+    //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>

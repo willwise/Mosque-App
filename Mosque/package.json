@@ -23,6 +23,7 @@
     "cordova-plugin-statusbar": "^1.0.1",
     "cordova-plugin-whitelist": "^1.2.2",
     "cordova-windows": "^5.0.0",
+    "gradle": "^1.0.8",
     "plugin": "^0.3.3"
   }
 }

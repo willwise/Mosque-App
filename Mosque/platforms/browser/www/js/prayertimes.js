@@ -1,12 +1,17 @@
-var data = 'Date,Fajr,Sunrise,Zuhur,Asr,Margrib,Isha,\nDate,Fajr,Sunrise,Zuhur,Asr,Margrib,Isha,\nDate,Fajr,Sunrise,Zuhur,Asr,Margrib,Isha,';
-         var lines = data.split("\n"),
-         output = [],
-         i;
-         for (i = 0; i < lines.length; i++)
-         output.push("<tr><td>"
-         + lines[i].slice(0,-1).split(",").join("</td><td>")
-         + "</td></tr>");
-         output = "<table>" + output.join("") + "</table>";
-         var div = document.getElementById('container');
-         
-         div.innerHTML = output;
+$(function() {
+   Papa.parse('/csv/sample.csv', {
+      download: true,
+      complete: function(results) {
+         console.log("Remote file parsed!", results.data);
+         $.each(results.data, function(i, el) {
+            var row = $("<tr/>");
+            row.append($("<td/>").text(i));
+            $.each(el, function(j, cell) {
+               if (cell !== "")
+                  row.append($("<td/>").text(cell));
+            });
+            $("#results tbody").append(row);
+         });
+      }
+   });
+});

@@ -9,7 +9,6 @@
 
    See https://github.com/apache/cordova-plugin-statusbar
 */
-
 .statusbar-overlay {
     background: #000000;
 }
@@ -18,15 +17,7 @@ table, tr, td{
         table-layout: fixed;
         width: 100%;
         text-align: center;
-        vertical-align:middle;
-        border: 0px solid blue;
-        border-spacing: 0px;
         }
-
-h3{
-        vertical-align:middle;
-        text-align: center;
-    }
 
 #socicalicon{
         position:absolute;
@@ -35,9 +26,10 @@ h3{
 }
 
 .page-content{
-  background-image:url(bckgrwlper.jpg);
+  background-image:url(/img/bckgrwlper.jpg); 
 }
 
-body{
-
+#sidemenu{
+  align-content: center;
+  vertical-align: middle;
 }

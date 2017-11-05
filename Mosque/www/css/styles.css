@@ -17,7 +17,7 @@ table, tr, td{
         table-layout: fixed;
         width: 100%;
         text-align: center;
-        }
+}
 
 #socicalicon{
         position:absolute;
@@ -30,6 +30,8 @@ table, tr, td{
 }
 
 #sidemenu{
-  align-content: center;
-  vertical-align: middle;
+  text-align: center;
+  
+h2{
+  text-align: center;
 }

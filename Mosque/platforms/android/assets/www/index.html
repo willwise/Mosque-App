@@ -2,28 +2,19 @@
 <html>
 <head>
 
-	<!-- Debugging Code Begining -->
+	<!-- Debugging Code Begining 
 	<script src="http://192.168.0.17:8080/target/target-script-min.js#anonymous"></script>
-	<!-- Debugging Code End -->
-    
-<!-- Prayer Time Code Beging -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="http://papaparse.com/resources/js/papaparse.js"></script>
-    <script src="js/main.js"></script>
-    <meta charset="utf-8">
-<!-- Prayer Time Code End -->
-    <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
+	 Debugging Code End -->
+
+    <!-- Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
             * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
             * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-
+                * Enable inline JS: add 'unsafe-inline' to default-src -->
     <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
-
+        
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -31,6 +22,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
+
     <!-- Your app title -->
     <title>Mosque Name Here</title>
 
@@ -79,14 +71,6 @@
                                     </tr> 
                             </div>                   
             </table>
-<!-- Beging Table For Social Media Icons -->
-            <table id="socicalicon">
-                        <tr>
-                            <td> <a class="item" href="#" onclick="window.open('https://facebook.com', '_self', 'location=yes'); return false;"> <img src="img\facebook-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>
-                            <td> <a class="item" href="#" onclick="window.open('https://Google.com', '_self', 'location=yes'); return false;"> <img src="img\twitter-logo.png" class="link" alt="Camera icon" height="25" width="25" > </a> </td>  
-                        </tr>
-                    </table>
-<!--End Table For Social Media Icons -->
         </div>
     </div>
 
@@ -115,13 +99,82 @@
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">                   
-                            <!-- Content Begin-->
+                            <!-- Content Begin.......................................................................................................................................................................................-->
+                            <table>
+                                            <tr>
+                                                <td colspan="7">                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <th colspan="7"> 
+                                                    Daily Prayer Begining Times
+                                                </th>
+                                            </tr>
+                                            
+                                            <tr>                                                    
+                                                <th>Date</th>
+                                                <th>Fajr</th>
+                                                <th>Sunrise</th>
+                                                <th>Zuhur</th>
+                                                <th>Asr</th>
+                                                <th>Margrib</th>
+                                                <th>Isha</th>
+                                            </tr> 
+
+                                            <tr>                                                    
+                                                <td>Date</td>
+                                                <td>Fajr</td>
+                                                <td>Sunrise</td>
+                                                <td>Zuhur</td>
+                                                <td>Asr</td>
+                                                <td>Margrib</td>
+                                                <td>Isha</td>
+                                            </tr>            
+
+                                            <tr>
+                                                    <th colspan="7"> 
+                                                        Daily Jamat Prayer Times
+                                                    </th>
+                                                </tr>
+                                                
+                                            <tr>                                                    
+                                                <th>Date</th>
+                                                <th>Fajr</th>
+                                                <th>Sunrise</th>
+                                                <th>Zuhur</th>
+                                                <th>Asr</th>
+                                                <th>Margrib</th>
+                                                <th>Isha</th>
+                                            </tr> 
+
+                                                <tr>                                                    
+                                                    <td>Date</td>
+                                                    <td>Fajr</td>
+                                                    <td>Sunrise</td>
+                                                    <td>Zuhur</td>
+                                                    <td>Asr</td>
+                                                    <td>Margrib</td>
+                                                    <td>Isha</td>
+                                                </tr>
+                                    </table>            
+                            <!--...............................-->
+                                                   <table style="width:100%" id="ex-table">
+                                                                  <tr id="tr">
+                                                                    <th>Tipo de la Denuncia:</th>
+                                                                    <th>Dirección:</th> 
+                                                                    <th>Descripción:</th>
+                                                                    <th>Correo:</th>
+                                                                    <th>Creda por:</th>
+                                                                    <th>Imagen</th>
+                                                                    <th>Lat - Long</th>
+                                                                 </table> 
                             <table id="results">
                                         <tbody>
                                                 
                                         </tbody>
                                 </table>
-                            <!-- Content End-->
+                            <!-- Content End.......................................................................................................................................................................................-->
 							</div> 
                         </div>
                     </div>
@@ -130,10 +183,32 @@
            </div>
     </div>
 
+<!-- Firebase Code Beging -->
+ <--
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/prayertimes.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js""></script>-->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script> -->
+    <script type="text/javascript" src="js/4.6.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-auth.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script> -->
+    <script type="text/javascript" src="js/4.6.0/firebase-database.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-messaging.js"></script> -->
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript" src="js/firebase_1.js"></script>
+-->
+
+<!-- Firebase Code End -->
+
+<!-- Prayer Time Code Beging 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://papaparse.com/resources/js/papaparse.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta charset="utf-8">
+ Prayer Time Code End -->
+
 </body>
 
 </html>

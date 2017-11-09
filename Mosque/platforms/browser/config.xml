@@ -2,7 +2,7 @@
 <widget id="com.Abutimur.mosque" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Mosque</name>
     <description>
-        Mosque App.
+        Mosque App
     </description>
     <author email="info@mosque.abutimur.com" href="http://mosque.abutimur.com">
         Mosque AbuTimur Team

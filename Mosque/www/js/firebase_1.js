@@ -19,6 +19,6 @@
                 content += '<td>' + val.uemail + '</td>';
                 content += '</tr>';
             });
-            $('#ex-table').append(content);
+            $('#results').append(content);
         }
     });

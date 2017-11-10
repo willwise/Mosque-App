@@ -19,6 +19,6 @@
                 content += '<td>' + val.Isha + '</td>';
                 content += '</tr>';
             });
-            $('#djprayer').append(content);
+            $('#monthly').append(content);
         }
     });

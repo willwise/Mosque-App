@@ -7,5 +7,4 @@
     storageBucket: "mosque-76018.appspot.com",
     messagingSenderId: "855562353122",
       };
-
-  firebase.initializeApp(config);
+firebase.initializeApp(config);

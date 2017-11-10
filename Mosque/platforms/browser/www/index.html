@@ -100,74 +100,23 @@
                     <div class="page-content">
                         <div class="content-block">                   
                             <!-- Content Begin.......................................................................................................................................................................................-->
-                            <table>
-                                            <tr>
-                                                <td colspan="7">                                                    
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <th colspan="7"> 
-                                                    Daily Prayer Begining Times
-                                                </th>
-                                            </tr>
-                                            
-                                            <tr>                                                    
-                                                <th>Date</th>
-                                                <th>Fajr</th>
-                                                <th>Sunrise</th>
-                                                <th>Zuhur</th>
-                                                <th>Asr</th>
-                                                <th>Margrib</th>
-                                                <th>Isha</th>
-                                            </tr> 
+                            <table id="djprayer">
 
-                                            <tr>                                                    
-                                                <td>Date</td>
-                                                <td>Fajr</td>
-                                                <td>Sunrise</td>
-                                                <td>Zuhur</td>
-                                                <td>Asr</td>
-                                                <td>Margrib</td>
-                                                <td>Isha</td>
-                                            </tr>            
+                                <tr> <th rowspan="8">Date</th> <th></th> <th>Start</th> <th>Jammat</th> </tr>
+                                <tr>                           <th>Fajr</th> <td>Fajr</td> <td>Fajr</td> </tr>
+                                <tr>                           <th>Sunrise</th> <td>Fajr</td> <td>Fajr</td> </tr>
+                                <tr>                           <th>Zuhur</th> <td>Fajr</td> <td>Fajr</td> </tr>
+                                <tr>                           <th>Asr</th> <td>Fajr</td> <td>Fajr</td> </tr>
+                                <tr>                           <th>Margrib</th> <td>Fajr</td> <td>Fajr</td> </tr>
+                                <tr>                           <th>Isha</th> <td>Fajr</td> <td>Fajr</td> </tr> 
+                                <tr>                           <th>Jummah</th> <td>Fajr</td> <td>Fajr</td> </tr>
 
-                                            <tr>
-                                                    <th colspan="7"> 
-                                                        Daily Jamat Prayer Times
-                                                    </th>
-                                                </tr>
-                                                
-                                            <tr>                                                    
-                                                <th>Date</th>
-                                                <th>Fajr</th>
-                                                <th>Sunrise</th>
-                                                <th>Zuhur</th>
-                                                <th>Asr</th>
-                                                <th>Margrib</th>
-                                                <th>Isha</th>
-                                            </tr> 
-
-                                                <tr>                                                    
-                                                    <td>Date</td>
-                                                    <td>Fajr</td>
-                                                    <td>Sunrise</td>
-                                                    <td>Zuhur</td>
-                                                    <td>Asr</td>
-                                                    <td>Margrib</td>
-                                                    <td>Isha</td>
-                                                </tr>
-                                    </table>            
+                            </table>         
                             <!--...............................-->
-                                                   <table style="width:100%" id="ex-table">
+                                                   <table id="ex-table">
                                                                   <tr id="tr">
                                                                     <th>Tipo de la Denuncia:</th>
-                                                                    <th>Dirección:</th> 
-                                                                    <th>Descripción:</th>
-                                                                    <th>Correo:</th>
-                                                                    <th>Creda por:</th>
-                                                                    <th>Imagen</th>
-                                                                    <th>Lat - Long</th>
+
                                                                  </table> 
                             <table id="results">
                                         <tbody>
@@ -188,12 +137,11 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js""></script>-->
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script> -->
-    <script type="text/javascript" src="js/4.6.0/firebase-app.js"></script>
+    <-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script> -->
     <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-auth.js"></script> -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script> -->
-    <script type="text/javascript" src="js/4.6.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script> 
     <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script> -->
     <!-- <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-messaging.js"></script> -->
     <script type="text/javascript" src="js/firebase.js"></script>
